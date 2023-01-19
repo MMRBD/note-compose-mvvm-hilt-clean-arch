@@ -10,4 +10,9 @@ import com.example.hellocompose.feature_note.domain.model.Note
 )
 abstract class NoteDatabase : RoomDatabase() {
     abstract val noteDao: NoteDao
+
+    object DatabaseName {
+        const val DB_NAME = "note_db"
+    }
 }
+
